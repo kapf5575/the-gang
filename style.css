@@ -12,6 +12,11 @@ h1{
 
 }
 
+h2{
+	font-weight: 800;
+	font-size: 50px;
+}
+
 h3{
 	font-weight: bold;
 	font-weight: 30px;
@@ -21,6 +26,13 @@ h4{
 	font-weight: bold;
 	font-size: 20px;
 }
+
+p{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 30px 0;
+}
+
 
 .wrapper{
 	width: 960px;
@@ -102,23 +114,65 @@ button.cta.alt{
 }
 
 
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
+	position: sticky; /*important to not make the nav flow into the header */
+	top: 0; /*when you scroll down, the nav bar will stick at the top */
+}
 
-/*
-<div class="hero-banner">
-		<div class="wrapper">
-			<h4>Katha presents</h4>
-			<h1>The Silliest &amp;<br>
-			Most Awesome Gang<br> 
-			in the World</h1>
-			<h3> It's Circle Guy, Hat Guy &amp; Red Guy.<br>
-			They're the best of friends.</h3>
-			<a class="cta alt" href="#more-info">Read More</a> <!-- if I click on "Read More", I want to jump to the more-info part -->
-		</div>
-		<!-- making teh characters not as images but as boxes with background-images because it's easier -->
-		<div class="character1"></div>
-		<div class="character2"></div>
-		<div class="character3"></div>
+nav .logo{
+	display: block;
+	width: 300px;
+	height: 40px;
+	position: absolute; top: 50%; left: 30px;
+	margin-top: -20px;
+	background: url(img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	/*making the text that was still overlapping with the logo, go away */
+	overflow: hidden;
+	text-indent: -999px;
+}
 
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+	/*shifting the list to the right so it does not overlap with the logo */
+}
+
+nav ul li a{ /*how should the text in the nav look like? */
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111111;
+	text-decoration: none;
+	padding: 35px 10px; 
+	line-height: 30px;/*shifting th text more to the middle of the nav because before it was right at the top */
+}
+
+.more-info{
+	text-align: center;
+}
+
+
+
+/*	<div class="more-info" id="more-info">
+		<h2>Join Our Fan Club</h2>
+		<p>Every week we have <span class="highlight"> a party.</span> If you want to join us then join our fan club. Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?</p>
+		<button class="cta">Sign Me Up!</button>
+		
 	</div>
+*/
 
-/*

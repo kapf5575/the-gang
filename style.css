@@ -166,6 +166,23 @@ nav ul li a{ /*how should the text in the nav look like? */
 	text-align: center;
 }
 
+.more-info p{ /* how much space should be below the h2 and above the p */
+	margin: 18px 0 35px;
+}
+
+
+.more-info h2{
+	margin: 50px 0 0;
+}
+
+.highlight{
+	background-color: #FFADF9;
+	color: #FF3300;
+	padding: 5px 10px;
+	line-height: 50px;
+	display: inline; 
+	font-weight: 800;
+}
 
 
 /*	<div class="more-info" id="more-info">
